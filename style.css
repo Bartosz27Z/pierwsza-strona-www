@@ -38,6 +38,9 @@ header > hr{
 
 @media screen and (max-width:800px){
 
+    header > hr{
+        display: none;
+    }
     .topnav{
         text-align: left;
     }
