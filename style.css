@@ -109,6 +109,63 @@ main .container #mainAside{
 }
 /* --------- /Main ---------- */
 
+/* --------- Article ---------- */
+article.mainItem{
+    position: relative;
+}
+.artThumbnail{
+    display: block;
+    width:100%;
+}
+.entry-meta{
+    padding: 1rem 0;
+}
+.entry-meta a{
+    color:var(--kolorGlowny);
+    text-decoration: none;
+}
+article h2 a{
+    font-style: italic;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.4;
+    font-family: Noto Serif;
+    text-decoration: none;
+    color: var(--kolorGlowny);
+}
+article p{
+    color:rgb(128, 128, 128);
+}
+.fa-my-class{
+    font-size:0.3rem;
+    position: relative;
+    bottom: 0.2rem;
+    padding:0 0.2rem;
+}
+.entry-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+.share-icons a{
+    color:rgb(179, 179, 179);
+    font-size: 1.2rem;
+    letter-spacing: 1rem;
+}
+
+.link-buttons{
+    position: absolute;
+    left:2rem;
+    top:2rem;
+}
+
+.link-buttons a.btn{
+    display: inline-block;
+    max-width: 100%;
+    padding: 0.4rem 1rem;
+}
+/* --------- /Article ---------- */
 @media screen and (max-width:800px){
 
 /* --------- Menu ---------- */
@@ -161,6 +218,11 @@ main .container #mainAside{
     flex:auto;
 }
 /* --------- /Main ---------- */
+
+/* --------- Article ---------- */
+.entry-footer{
+    flex-direction: column-reverse;
+    row-gap: 1rem;
 }
-
-
+/* --------- /Article ---------- */
+}
